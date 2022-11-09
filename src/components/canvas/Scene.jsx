@@ -20,13 +20,15 @@ export default function Scene({ children, ...props }) {
       enableRotate: true,
       enableZoom: true,
       reverseOrbit: false
+    }),
+    'Canvas': folder({
+      fov: 80,
+      position: [0, 0, 1]
     })
-    // 'canvas': folder({
-
-    // })
   })
+
   return (
-    <Canvas {...props}>
+    <Canvas  {...props}>
       <directionalLight intensity={directionalIntensity} />
       <ambientLight intensity={ambientIntensity} />
       {children}

@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import Overlay from '@/components/dom/Overlay'
+// import { postprocessing, EffectComposer, Bloom, DepthOfField } from '@react-three/drei'
 
 const StarsScene = dynamic(() => import('@/components/canvas/Stars'), { ssr: false })
 
@@ -9,7 +10,12 @@ export default function Page(props) {
   )
 }
 
-Page.canvas = (props) => <StarsScene position-y={props.position} />
+Page.canvas = (props) => {
+
+return(
+<StarsScene position-y={props.position} />
+)
+}
 
 export async function getStaticProps() {
 

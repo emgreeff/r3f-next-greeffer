@@ -33,7 +33,7 @@ function LogoStarsButton() {
   const router = useRouter();
   return (
     <button type="button" onClick={() => router.push('/logo-stars')}>
-      Logo Stars
+      LogoStars
     </button>
   );
 }
@@ -41,18 +41,18 @@ function PointMaterialButton() {
   const router = useRouter();
   return (
     <button type="button" onClick={() => router.push('/point-material')}>
-      Point Material
+      PointMaterial
     </button>
   );
 }
 export default function Overlay() {
   return (
-    <div class="flex flex-row">
-      <div class="basis-16"><HomeButton /></div>
-      <div class="basis-16"><StarsButton /></div>
-      <div class="basis-16"><BlobButton /></div>
-      <div class="basis-16"><LogoStarsButton /></div>
-      <div class="basis-16"><PointMaterialButton /></div>
+    <div className="flex flex-row">
+      <div className="basis-24"><HomeButton /></div>
+      <div className="basis-24"><StarsButton /></div>
+      <div className="basis-24"><BlobButton /></div>
+      <div className="basis-24"><LogoStarsButton /></div>
+      <div className="basis-24"><PointMaterialButton /></div>
       {/* <div class="basis-16"><BlobButton /></div> */}
     </div>
   )
