@@ -5,18 +5,17 @@ const StarsScene = dynamic(() => import('@/components/canvas/Stars'), { ssr: fal
 
 export default function Page(props) {
   return (
-    <Overlay>
-      {props.title}
-    </Overlay>
+    <Overlay />
   )
 }
+
 Page.canvas = (props) => <StarsScene position-y={props.position} />
 
 export async function getStaticProps() {
 
   return {
     props: {
-      title: 'StarsScene',
+      title: 'Stars Scene',
       position: -0.75
     }
   }

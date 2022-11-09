@@ -6,20 +6,18 @@ export default function StarScene(props) {
   const { radius, depth, count, factor, sat, speed, fade } = useControls({
     'components': folder({
       stars: folder({
-        radius: 24,
-        depth: 50,
+        radius: 243,
+        depth: 86,
         count: 2500,
-        factor: 10,
-        sat: 10,
+        factor: 7,
+        sat: 18,
         fade: true,
         speed: 1
       })
     })
   })
 
-  return (
-
+  return (  
     <Stars radius={radius} depth={depth} count={count} factor={factor} saturation={sat} fade={fade} speed={speed} {...props} />
-
   )
 }

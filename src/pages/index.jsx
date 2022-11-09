@@ -10,21 +10,21 @@ const Logo = dynamic(() => import('@/components/canvas/Logo'), { ssr: false })
 // Dom components go here
 export default function Page(props) {
   return (
-    <Overlay>
-      Page title
-    </Overlay>
-    // <Instructions>
-    //   This is a minimal starter for Nextjs + React-three-fiber and Threejs. Click on the{' '}
-    //   <span className='text-cyan-200'>atoms nucleus</span> to navigate to the{' '}
-    //   <span className='text-green-200'>/blob</span> page. OrbitControls are enabled by default.
-    // </Instructions>
+    <Overlay />
   )
 }
 
 // Canvas components go here
 // It will receive same props as the Page component (from getStaticProps, etc.)
-Page.canvas = (props) => <Logo scale={0.5} route='/stars' position-y={-1} />
+Page.canvas = (props) => <Logo scale={props.scale} route='/blob' position-y={props.position} />
 
 export async function getStaticProps() {
-  return { props: { title: 'Index' } }
+  return {
+    props: {
+      title: 'Home',
+      position: -1,
+      scale: 0.5
+
+    }
+  }
 }
