@@ -1,0 +1,251 @@
+{
+    "asset" : {
+        "copyright" : "em greeff",
+        "generator" : "Khronos glTF Blender I/O v3.3.32",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_draco_mesh_compression",
+        "KHR_lights_punctual"
+    ],
+    "extensionsRequired" : [
+        "KHR_draco_mesh_compression",
+        "KHR_lights_punctual"
+    ],
+    "extensions" : {
+        "KHR_lights_punctual" : {
+            "lights" : [
+                {
+                    "color" : [
+                        0.6038162708282471,
+                        0.6038162708282471,
+                        0.6038162708282471
+                    ],
+                    "intensity" : 1110.9000244140625,
+                    "spot" : {
+                        "innerConeAngle" : 0.09360271870076176,
+                        "outerConeAngle" : 0.31154128909111023
+                    },
+                    "type" : "spot",
+                    "range" : 40,
+                    "name" : "Spot"
+                }
+            ]
+        }
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "name" : "Scene.001"
+        },
+        {
+            "name" : "Scene.002"
+        }
+    ],
+    "nodes" : [
+        {
+            "camera" : 0,
+            "name" : "Camera",
+            "rotation" : [
+                0.4208240509033203,
+                0.5488909482955933,
+                -0.14478889107704163,
+                0.7075747847557068
+            ],
+            "translation" : [
+                1.8832529783248901,
+                0.8104565739631653,
+                0.6759213805198669
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Cube",
+            "rotation" : [
+                0,
+                -0.9998766183853149,
+                0,
+                0.01570739783346653
+            ],
+            "translation" : [
+                0,
+                1.2899999618530273,
+                0
+            ]
+        },
+        {
+            "extensions" : {
+                "KHR_lights_punctual" : {
+                    "light" : 0
+                }
+            },
+            "name" : "Spot",
+            "rotation" : [
+                0.07753810286521912,
+                -0.6926074624061584,
+                0.7152438163757324,
+                0.05204934999346733
+            ],
+            "translation" : [
+                0,
+                -8.929999351501465,
+                0
+            ]
+        }
+    ],
+    "cameras" : [
+        {
+            "name" : "Camera",
+            "perspective" : {
+                "aspectRatio" : 1.7777777777777777,
+                "yfov" : 0.39959652046304894,
+                "zfar" : 100,
+                "znear" : 0.10000000149011612
+            },
+            "type" : "perspective"
+        }
+    ],
+    "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "rotation"
+                    }
+                }
+            ],
+            "name" : "CubeAction",
+            "samplers" : [
+                {
+                    "input" : 6,
+                    "interpolation" : "LINEAR",
+                    "output" : 7
+                }
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TANGENT" : 2,
+                        "TEXCOORD_0" : 3,
+                        "COLOR_0" : 4
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 0,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TANGENT" : 2,
+                                "TEXCOORD_0" : 3,
+                                "COLOR_0" : 4
+                            }
+                        }
+                    },
+                    "indices" : 5,
+                    "mode" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "componentType" : 5126,
+            "count" : 979296,
+            "max" : [
+                1.2806856632232666,
+                1.280685544013977,
+                1.280685544013977
+            ],
+            "min" : [
+                -1.280685544013977,
+                -1.280685544013977,
+                -1.280685544013977
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 979296,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 979296,
+            "type" : "VEC4"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 979296,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 979296,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "componentType" : 5125,
+            "count" : 1468944,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 192,
+            "max" : [
+                8
+            ],
+            "min" : [
+                0.041666666666666664
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 192,
+            "type" : "VEC4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 5159535,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 768,
+            "byteOffset" : 5159536
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3072,
+            "byteOffset" : 5160304
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 5163376,
+            "uri" : "moon.bin"
+        }
+    ]
+}
