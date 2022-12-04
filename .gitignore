@@ -42,3 +42,6 @@ report.*.json
 .vscode/*-debug-profile
 .gitignore
 r3f-next-greeffer.code-workspace
+
+# yarn
+.yarn
