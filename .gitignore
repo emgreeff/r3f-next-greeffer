@@ -48,3 +48,4 @@ r3f-next-greeffer.code-workspace
 .yarn/*
 
 .vercel
+.yarn/cache/loader-utils-npm-1.4.0-a56254a277-d150b15e7a.zip
