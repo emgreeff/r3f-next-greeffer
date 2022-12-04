@@ -45,4 +45,4 @@ report.*.json
 r3f-next-greeffer.code-workspace
 
 # yarn
-.yarn
+.yarn/*
