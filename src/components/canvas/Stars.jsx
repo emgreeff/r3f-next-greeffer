@@ -17,7 +17,7 @@ export default function StarScene(props) {
         speed: 0.2
       }),
       'Bloom': folder({
-        kernalSize: 3,//<------------------------broken
+        kernalSize: 3,
         luminanceSmoothing: -2.00,
         luminanceThreshold: 1.0,
         intensity: 1.0,

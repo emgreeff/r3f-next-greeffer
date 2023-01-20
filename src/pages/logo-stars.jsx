@@ -15,9 +15,9 @@ export default function Page(props) {
 function LogoScene(props) {
 
   return (
-    <>
-      <StarsScene position-y={props.position} />
-      <Logo scale={props.logoScale} route='/stars' position-y={props.logoPosition} />
+    <>      
+      <Logo scale={ props.logoScale } route='/stars' position-y={ props.logoPosition } />
+      <StarsScene position-y={ props.position } />
     </>
 
   )
